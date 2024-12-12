@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Небольшая галерея с разными картинками" />
+    <title>Небольшая галерея — Web</title>
+    <!-- Подключаем стандартную иконку, которая поддерживается во всех браузерах -->
+    <link rel="icon" href="/favicon.ico" />
+    <!-- Подключаем SVG иконку, для браузеров, которые поддерживают SVG -->
+    <link rel="icon" href="/img/favicons/icon.svg" type="image/svg+xml" />
+    <!-- Подключаем иконку, для устройств Apple -->
+    <link rel="apple-icon-touch" href="/img/favicons/apple-touch-icon.png" />
+    <!-- Подключаем webmanifest с иконками, для устройств Android -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+
+    <!-- Другие полезные теги, которые желательно включать в head -->
+    <!-- В частности идущие ниже meta-теги используются для представления сайта в соц. сетях -->
+    <!-- Данные теги используют протокол OpenGraph — https://ogp.me/ -->
+    <meta property="og:title" content="Небольшая галерея — Web" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru" />
+    <meta
+      property="og:description"
+      content="Небольшая галерея с разными картинками"
+    />
+
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <a href="/" class="site-logo">
+        <img src="/img/logo.svg" alt="Логотип" />
+      </a>
+    </header>
+    <nav class="breadcrumbs">
+      <ul class="breadcrumbs__links">
+        <li>
+          <a href="/">Главная</a>
+        </li>
+        <li><i class="fa-solid fa-angles-right"></i></li>
+        <li>Галерея</li>
+      </ul>
+    </nav>
+
+    <div class="wrapper">
+      <main>
+        <h1 class="title">
+          Небольшая галерея <i class="fa-regular fa-image"></i>
+        </h1>
+        <div class="gallery">
+          <figure class="card">
+            <a href="/img/1.webp" target="_blank">
+              <img src="/img/1.webp" alt="Пустыня" width="1920" height="1080" />
+            </a>
+            <figcaption class="card__caption">
+              <p>Ночь в пустыне</p>
+              <div class="card__info">
+                <span
+                  >543 <i aria-hidden="true" class="fa-solid fa-eye"></i
+                ></span>
+                <span
+                  >350 <i aria-hidden="true" class="fa-solid fa-circle-down"></i
+                ></span>
+                <a href="/img/1.webp" download
+                  >Скачать
+                  <i aria-hidden="true" class="fa-solid fa-download"></i
+                ></a>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <a href="/img/2.webp" target="_blank">
+              <img src="/img/2.webp" alt="Дорога" width="1920" height="1080" />
+            </a>
+            <figcaption class="card__caption">
+              <p>Дорога в город</p>
+              <div class="card__info">
+                <span
+                  >643 <i aria-hidden="true" class="fa-solid fa-eye"></i
+                ></span>
+                <span
+                  >250 <i aria-hidden="true" class="fa-solid fa-circle-down"></i
+                ></span>
+                <a href="/img/2.webp" download
+                  >Скачать
+                  <i aria-hidden="true" class="fa-solid fa-download"></i
+                ></a>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <a href="/img/3.webp" target="_blank">
+              <img
+                src="/img/3.webp"
+                alt="Лодка на озере"
+                width="2048"
+                height="1152"
+              />
+            </a>
+            <figcaption class="card__caption">
+              <p>Горное озеро</p>
+              <div class="card__info">
+                <span
+                  >43 <i aria-hidden="true" class="fa-solid fa-eye"></i
+                ></span>
+                <span
+                  >20 <i aria-hidden="true" class="fa-solid fa-circle-down"></i
+                ></span>
+                <a href="/img/3.webp" download
+                  >Скачать
+                  <i aria-hidden="true" class="fa-solid fa-download"></i
+                ></a>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <a href="/img/4.webp" target="_blank">
+              <img
+                src="/img/4.webp"
+                alt="Горное долина и река"
+                width="2560"
+                height="1440"
+              />
+            </a>
+            <figcaption class="card__caption">
+              <p>Горная долина</p>
+              <div class="card__info">
+                <span
+                  >621 <i aria-hidden="true" class="fa-solid fa-eye"></i
+                ></span>
+                <span
+                  >342 <i aria-hidden="true" class="fa-solid fa-circle-down"></i
+                ></span>
+                <a href="/img/4.webp" download
+                  >Скачать
+                  <i aria-hidden="true" class="fa-solid fa-download"></i
+                ></a>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <a href="/img/5.webp" target="_blank">
+              <img
+                src="/img/5.webp"
+                alt="Восход планеты над горой"
+                width="2560"
+                height="1440"
+              />
+            </a>
+            <figcaption class="card__caption">
+              <p>Другие миры</p>
+              <div class="card__info">
+                <span
+                  >1022 <i aria-hidden="true" class="fa-solid fa-eye"></i
+                ></span>
+                <span
+                  >430 <i aria-hidden="true" class="fa-solid fa-circle-down"></i
+                ></span>
+                <a href="/img/5.webp" download
+                  >Скачать
+                  <i aria-hidden="true" class="fa-solid fa-download"></i
+                ></a>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="card">
+            <a href="/img/6.webp" target="_blank">
+              <img
+                src="/img/6.webp"
+                alt="Лес на берегу озера"
+                width="2560"
+                height="1600"
+              />
+            </a>
+            <figcaption class="card__caption">
+              <p>Красивое озеро</p>
+              <div class="card__info">
+                <span
+                  >719 <i aria-hidden="true" class="fa-solid fa-eye"></i
+                ></span>
+                <span
+                  >422 <i aria-hidden="true" class="fa-solid fa-circle-down"></i
+                ></span>
+                <a href="/img/6.webp" download
+                  >Скачать
+                  <i aria-hidden="true" class="fa-solid fa-download"></i
+                ></a>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="site-footer">
+        <img src="/img/logo.svg" alt="Логотип" />
+        <p class="copyright">
+          <small>ДНК СамГТУ — 2024</small>
+          <small>Сайт разработан исключительно в учебных целях</small>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
