@@ -32,6 +32,8 @@
 
 body {
   font-family: "Jost", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
   color: rgb(var(--text-color));
 }
 
@@ -46,6 +48,12 @@ body {
   justify-content: center;
   padding: 1rem;
   background-color: var(--oc-indigo-6);
+}
+
+.header-sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .site-logo {
@@ -83,6 +91,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .breadcrumbs {
@@ -119,6 +128,100 @@ body {
 
   & li:last-child {
     color: var(--oc-indigo-6);
+  }
+}
+
+.site-title {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 2rem 2rem 3rem;
+}
+
+.examples {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 4rem;
+
+  @media (width > 768px) {
+    & {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+.example-card {
+  background-color: var(--oc-gray-0);
+
+  border: 2px solid var(--oc-indigo-4);
+  border-radius: 0.5rem;
+
+  box-shadow: 0 0 6px rgb(var(--shadow-color), 0.2);
+}
+
+.new {
+  border: 2px solid transparent;
+  background: linear-gradient(#fff, #fff 0) padding-box,
+    linear-gradient(to right, rgb(55, 178, 77), rgb(232, 89, 12)) border-box;
+}
+
+.example-card__annotation {
+  padding: 1rem;
+
+  & h2 {
+    position: relative;
+    padding-bottom: 0.25rem;
+    margin-bottom: 1.75rem;
+  }
+
+  & h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    background-color: var(--oc-indigo-1);
+  }
+
+  & p {
+    font-weight: 300;
+    margin: 1rem 0;
+  }
+}
+
+.example-card__open {
+  display: block;
+  padding: 1rem;
+
+  width: 100%;
+
+  background-color: var(--oc-indigo-4);
+
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+
+  border-radius: 0 0 0.35rem 0.35rem;
+
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: var(--oc-indigo-5);
+  }
+}
+
+.example-new {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & span {
+    font-weight: 300;
+    font-size: 1rem;
+    color: var(--oc-indigo-8);
+    text-transform: uppercase;
   }
 }
 
