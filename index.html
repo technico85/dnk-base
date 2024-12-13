@@ -45,7 +45,7 @@
   </head>
   <body>
     <header class="site-header header-sticky">
-      <a href="/" class="site-logo">
+      <a href="/" class="site-logo link">
         <img src="/img/logo.svg" alt="Логотип" />
       </a>
     </header>
@@ -55,39 +55,39 @@
         <div class="examples">
           <div class="example-card">
             <div class="example-card__annotation">
-              <h2>Создание простого текста</h2>
+              <h2 class="underline-header">Создание простого текста</h2>
               <p>
                 Страница, на которой создан текст, с использованием тегов,
                 предназначенных для разметки текста (абзацы, заголовки, списки и
                 другие)...
               </p>
             </div>
-            <a href="/pages/first-text.html" class="example-card__open"
+            <a href="/pages/first-text.html" class="example-card__open link"
               >Смотреть</a
             >
           </div>
           <div class="example-card">
             <div class="example-card__annotation">
-              <h2>Создание текста с таблицей</h2>
+              <h2 class="underline-header">Создание текста с таблицей</h2>
               <p>
                 Страница, на которой создан текст, с использованием тегов,
                 предназначенных для разметки текста, а также добавлена таблица...
               </p>
             </div>
-            <a href="/pages/second-text.html" class="example-card__open"
+            <a href="/pages/second-text.html" class="example-card__open link"
               >Смотреть</a
             >
           </div>
           <div class="example-card new">
             <div class="example-card__annotation">
-              <h2 class="example-new">Создание галереии <span>Новинка</span></h2>
+              <h2 class="underline-header example-new">Создание галереии <span>Новинка</span></h2>
               <p>
                 На этой странице создана галерея, чтобы наглядно
                 продемонстрировать, как происходит добавление изображений в HTML
                 страницу...
               </p>
             </div>
-            <a href="/pages/gallery.html" class="example-card__open">Смотреть</a>
+            <a href="/pages/gallery.html" class="example-card__open link">Смотреть</a>
           </div>
         </div>
       </main>
@@ -96,10 +96,11 @@
       <div class="site-footer">
         <img src="/img/logo.svg" alt="Логотип" />
         <p class="copyright">
-          <small>ДНК СамГТУ — 2024</small>
+          <small>ДНК СамГТУ — <span id="year"></span></small>
           <small>Сайт разработан исключительно в учебных целях</small>
         </p>
       </div>
     </footer>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>
