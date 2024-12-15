@@ -115,25 +115,25 @@ abbr {
 
   font-size: 1rem;
 
-  & caption {
+  caption {
     font-weight: 500;
     text-align: left;
 
     padding: 0.5rem 0;
   }
 
-  & th {
+  th {
     background-color: var(--oc-indigo-5);
     color: #ffffff;
   }
 
-  & th,
-  & td {
+  th,
+  td {
     border: 1px solid var(--oc-gray-5);
     padding: 0.25rem 0.5rem;
   }
 
-  & tr:nth-child(even) {
+  tr:nth-child(even) {
     background-color: var(--oc-indigo-0);
   }
 }
@@ -162,7 +162,7 @@ abbr {
   border: 2px solid var(--oc-gray-2);
   border-radius: 0.5rem;
 
-  & span {
+  span {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -180,7 +180,7 @@ abbr {
 .pros {
   border-color: var(--oc-green-7);
 
-  & span i {
+  span i {
     color: var(--oc-green-7);
   }
 }
@@ -188,7 +188,7 @@ abbr {
 .cons {
   border-color: var(--oc-red-7);
 
-  & span i {
+  span i {
     color: var(--oc-red-7);
   }
 }
@@ -225,7 +225,7 @@ abbr {
     opacity: 0.8;
   }
 
-  & img {
+  img {
     width: 6rem;
     height: auto;
   }
@@ -241,7 +241,7 @@ abbr {
   background-color: var(--oc-indigo-9);
   color: var(--oc-gray-0);
 
-  & img {
+  img {
     width: 12rem;
     height: auto;
   }
@@ -283,8 +283,8 @@ abbr {
 
   list-style: none;
 
-  & .link:hover,
-  & li:last-child {
+  .link:hover,
+  li:last-child {
     color: var(--oc-indigo-6);
   }
 }
@@ -319,16 +319,16 @@ abbr {
 
   box-shadow: 0 0 6px rgb(var(--shadow-color), 0.2);
 
-  & .example-card__annotation {
+  .example-card__annotation {
     padding: 1rem;
 
-    & p {
+    p {
       font-weight: 300;
       margin: 1rem 0;
     }
   }
 
-  & .example-card__open {
+  .example-card__open {
     display: block;
     padding: 1rem;
 
@@ -363,7 +363,7 @@ abbr {
   justify-content: space-between;
   align-items: center;
 
-  & span {
+  span {
     font-weight: 300;
     font-size: 1rem;
     color: var(--oc-indigo-8);
@@ -381,7 +381,7 @@ abbr {
 
   padding: 2rem 0 3rem;
 
-  & i {
+  i {
     display: none;
     color: var(--oc-pink-6);
   }
@@ -399,7 +399,7 @@ abbr {
   gap: 2rem;
 
   @media (width >= 1024px) {
-    .gallery {
+    & {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
@@ -419,7 +419,7 @@ abbr {
     opacity: 1;
   }
 
-  & img {
+  img {
     display: block;
     width: 100%;
     height: auto;
@@ -449,7 +449,7 @@ abbr {
 
   transition: opacity 0.2s ease-in-out;
 
-  & p {
+  p {
     text-transform: uppercase;
     font-weight: 700;
   }
@@ -460,23 +460,23 @@ abbr {
   align-items: center;
   gap: 1rem;
 
-  & span,
-  & a {
+  span,
+  a {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
   }
 
-  & a:link,
-  & a:visited {
+  a:link,
+  a:visited {
     color: var(--oc-gray-0);
     text-decoration: none;
     transition: color 0.1s ease-in;
     border-radius: 0.25rem;
   }
 
-  & a:hover,
-  & a:active {
+  a:hover,
+  a:active {
     color: var(--oc-orange-1);
   }
 }
@@ -489,7 +489,6 @@ abbr {
   @media (width > 768px) {
     & {
       grid-template-columns: 1fr minmax(0, auto);
-      /* gap: 1rem; */
     }
   }
 }
@@ -521,11 +520,11 @@ abbr {
 
   box-shadow: 0 0 6px rgb(var(--shadow-color), 0.2);
 
-  & h2 {
+  h2 {
     padding-bottom: 1rem;
   }
 
-  & ul {
+  ul {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -533,11 +532,11 @@ abbr {
     list-style: none;
   }
 
-  & .link {
+  .link {
     display: block;
   }
 
-  & .link:hover {
+  .link:hover {
     text-decoration: underline;
   }
 
@@ -559,24 +558,22 @@ abbr {
   width: 100%;
   margin: 0 auto;
 
-  & section {
+  section {
     margin-top: 2rem;
   }
 
-  & ul,
-  & ol {
+  ul,
+  ol {
     padding-left: 1.75rem;
   }
 
-  & li {
+  li {
     margin: 0.5rem 0;
   }
 
-  & p {
+  p {
     margin: 1rem 0;
   }
-
-  
 }
 
 .article__title {
@@ -614,7 +611,7 @@ abbr {
 
   box-shadow: 0 1px 6px 0 var(--shadow-color);
 
-  & h2 {
+  h2 {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
@@ -639,11 +636,11 @@ abbr {
   flex-direction: column;
   gap: 0.25rem;
 
-  & input:focus-visible {
+  input:focus-visible {
     outline: 2px solid #845ef7;
   }
 
-  & input:not([type="submit"], [type="reset"]) {
+  input:not([type="submit"], [type="reset"]) {
     border: 1px solid #b197fc;
     border-radius: 0.5rem;
 
@@ -654,7 +651,7 @@ abbr {
     color: #343a40;
   }
 
-  & label {
+  label {
     font-weight: 700;
   }
 }
@@ -663,7 +660,7 @@ abbr {
   display: flex;
   justify-content: space-between;
 
-  & small {
+  small {
     font-weight: 300;
     color: #868e96;
   }
@@ -718,7 +715,7 @@ abbr {
   gap: 2rem;
   width: 100%;
 
-  & h2 {
+  h2 {
     text-align: center;
     text-transform: uppercase;
   }
@@ -747,7 +744,7 @@ abbr {
 
   color: #d0bfff;
 
-  & i {
+  i {
     font-size: 6rem;
   }
 }
